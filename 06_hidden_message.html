@@ -36,6 +36,7 @@
   <body>
     <div id="hidden-message">This is our hidden message!</div>
     <button id="button-show">Show secret message</button>
+    <button id="button-hide">Hide secret message</button>
   </body>
 
   <script>
@@ -49,6 +50,19 @@
   buttonShow.onclick = function () {
     // buttonShow has been clicked, show the hidden message.
     hiddenMessage.style.display = 'block';
+    buttonShow.style.display = 'none';
+    buttonShow.style.display = 'block';
+  }
+
+  // Get the element #button-show and assign it to buttonShow variable
+  const buttonHide = document.querySelector('#button-hide')
+
+    // Listen for a buttonShow click
+    buttonHide.onclick = function () {
+    // buttonShow has been clicked, show the hidden message.
+    hiddenMessage.style.display = 'none';
+    buttonHide.style.display = 'block';
+    buttonHide.style.display = 'none';
   }
   </script>
 
