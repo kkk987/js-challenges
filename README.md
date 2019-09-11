@@ -22,7 +22,5 @@
 * 04_objects
 * 05_sumNumbers
 * 06_hiddenMessage
-<<<<<<< HEAD
-=======
 * 07_binarySearch
->>>>>>> 22c67505a3af3ec385b64a653879fea5c44ccbc9
+* 08_welcome
