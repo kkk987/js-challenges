@@ -32,11 +32,18 @@
   </body>
 
   <script>
-  const name = document.querySelector('input')
+  const name = document.getElementsByTagName('input')
   const welcomeMessage = document.querySelector('h1')
-  name.onkeyup = function () {
+  let input = document.createElement("input");
+  input.setAttribute("type", "text");
+  input.placeholder = `Enter your first name and last name`;
+  document.body.appendChild(input);
+  name[1].onkeyup = function () {
     // hint: name.value gives you the current text in the input box
-    welcomeMessage.textContent = `Welcome, ${name.value}!`;
+    welcomeMessage.textContent = `Welcome, ${name[1].value.toUpperCase()}!`;
+    if(!name[1].value) {
+      welcomeMessage.textContent = ``;
+    }
   }
   </script>
 
