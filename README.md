@@ -24,3 +24,5 @@
 * 06_hiddenMessage
 * 07_binarySearch
 * 08_welcome
+* 09_oddOrEven
+* 10_numberPersistence
